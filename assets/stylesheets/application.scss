@@ -64,6 +64,7 @@ section .section-title {
   border: none;
   background: white;
   border-radius:10px;
+  margin: 0 10%;
 }
 
 .avatar {
@@ -93,6 +94,7 @@ section .section-title {
 
 .card-body-student{
   padding: 8px;
+  display: flex;
 }
 
 .card-student-text{

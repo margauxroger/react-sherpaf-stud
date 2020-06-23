@@ -29,7 +29,7 @@ const data = this.props.grades.forEach((grade) => {
                 });
 console.log(data_graph);
 
-const options = {
+const options_bar = {
       title: {
         text: "Flashcard score chapter by chapter"
       },
@@ -55,10 +55,10 @@ const options = {
 
    return (
       <div>
-      <h2>{this.props.activeStudent.first_name}'s Individual Dashboard</h2>
-      <img src={this.props.activeStudent.picture_url} alt="" className="avatar"/>
-      <p>Overall score: {this.props.activeStudent.grade} / 100</p>
-        <CanvasJSChart options = {options} />
+        <h2>{this.props.activeStudent.first_name}'s Individual Dashboard</h2>
+        <img src={this.props.activeStudent.picture_url} alt="" className="avatar"/>
+        <p>Overall score: {this.props.activeStudent.grade} / 100</p>
+        <CanvasJSChart options = {options_bar} />
       </div>
     );
   }
